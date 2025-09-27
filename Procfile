@@ -1,1 +1,1 @@
-web: gunicorn my_project.wsgi:application --bind 0.0.0.0:$PORT
+gunicorn my_project.wsgi:application --timeout 120 --workers 4
